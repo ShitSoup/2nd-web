@@ -13,6 +13,13 @@
   margin: 0;
 }
 
+.clearfloat:after,
+.clearfloat:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .floatl {
   float: left;
 }
@@ -22,18 +29,18 @@
 }
 
 /* hyperlink */
-a {
+top-nav a {
   text-decoration: none;
 }
 
-a:link{
-     color: #ffffff;
+top-nav a:link{
+  color: #ffffff;
  }
 
- a:hover{
-     color: #0094ff;
+top-nav a:hover{
+  color: #0094ff;
  }
 
- a:active{
-     color: #636363;
+top-nav a:active{
+  color: #636363;
  }
