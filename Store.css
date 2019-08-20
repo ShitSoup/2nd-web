@@ -107,6 +107,19 @@ img {
   box-shadow: inset 0 0 2px 2px rgba(#44aaff, 0.3);
 }
 
+.header .cart,
+.header a {
+  height: 40px;
+  width: 8%;
+  border-radius: 4px;
+  background-color: #44aaff;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+  margin-left: 15%;
+}
+
 /* main-promote */
 
 .main-promote .category {
