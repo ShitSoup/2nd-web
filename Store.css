@@ -21,9 +21,9 @@ img {
 }
 
 .container {
-  max-width: 1280px;
   display: block;
   margin: 0 auto;
+  max-width: 1280px;
 }
 
 .floatl {
@@ -42,7 +42,7 @@ img {
 }
 
 .top-nav .item {
-  padding: 20px 20px;
+  padding: 20px 18px;
   display: inline-block;
 }
 
@@ -76,6 +76,11 @@ img {
   font-size: 33px;
 }
 
+.column6 img {
+  height: 480px;
+  width: 853.4px;
+}
+
 .header .search {
   border: 1.5px solid #44aaff;
 }
@@ -85,7 +90,7 @@ img {
   border: 0;
   display: block;
   float: left;
-  padding: 9px;
+  padding: 8px;
   /*outline: 0;*/
 }
 
@@ -107,17 +112,19 @@ img {
   box-shadow: inset 0 0 2px 2px rgba(#44aaff, 0.3);
 }
 
-.header .cart,
-.header a {
-  height: 40px;
-  width: 8%;
-  border-radius: 4px;
-  background-color: #44aaff;
-  text-align: center;
-  text-decoration: none;
+.header .cart button {
+  right: 10%;
+  width: 30%;
+  background: #44aaff;
   color: #ffffff;
-  padding: 5px;
-  margin-left: 15%;
+  border: 0;
+  display: block;
+  float: right;
+  padding: 8px;
+}
+
+.header .cart button:hover {
+  background: #40a0ff;
 }
 
 /* main-promote */
@@ -128,7 +135,9 @@ img {
 }
 
 .main-promote .category .item {
-  padding: 17.8px 20px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
 }
 
 .main-promote .category .item:hover {
@@ -140,6 +149,7 @@ img {
   background: #ffffff;
   color: #777777;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  height: 480px;
 }
 
 .main-promote .info * {
@@ -158,7 +168,18 @@ img {
   padding-bottom: 20px;
 }
 
+/* footer */
+footer {
+  text-align: center;
+}
 
+footer a {
+  color: #777777;
+}
+
+.footer-href p {
+  display: inline-block;
+}
 
 
 .column1,
