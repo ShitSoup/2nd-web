@@ -63,8 +63,10 @@ body {
 
 /* 页面居中区域内容 */
 .main-content {
-  top: 60px;
-  position: relative;
+  top: 80px;
+  left: 140px;
+  margin-left: -95px;
+  position: absolute;
   margin: 0 auto;
   display: block;
 }
@@ -76,6 +78,7 @@ body {
   padding: 10px 0;
   text-align: left;
   background-color: #fefefe;
+  position: relative;
 }
 
 .topmenu > li {
@@ -86,25 +89,36 @@ body {
   z-index: 3;
 }
 
-.topmenu > li:hover {
-  background-color: #d9d9d9;
-}
-
-.topmenu > li:hover .submenu {
-  display: block;
-}
-
 .topmenu > li > a {
   color: #333333;
   padding-left: 15px;
 }
 
-.topmenu > li > a:hover {
+.topmenu .lihover {
+  background-color: #d9d9d9;
+}
+
+.topmenu .lihover > a {
   color: #c81623;
+}
+
+.topmenu .lihover .submenu {
+  display: block;
+}
+
+.topmenu .ddhover a {
+  color: #c81623;
+}
+
+.topmenu .totop {
+  position: fixed;
+  top: 3px;
+  left: 330px;
 }
 
 /* 右侧二级菜单栏 */
 .submenu {
+  min-height: 470px;
   display: none;
   position: absolute;
   margin: 0;
@@ -141,15 +155,15 @@ body {
   margin-left: 20px;
 }
 
-.leftdiv span:hover {
-  background-color: #c81623;
-}
-
 .leftdiv span img {
   height: 10px;
   width: 10px;
   margin-left: 5px;
   margin-top: -2px;
+}
+
+.leftdiv .spanhover {
+  background-color: #c81623;
 }
 
 .leftdiv dl {
@@ -219,7 +233,6 @@ body {
   display: block;
   float: right;
   width: 198px;
-  min-height: 470px;
 }
 
 .rightdiv .brand {
